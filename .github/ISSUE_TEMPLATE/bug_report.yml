@@ -1,0 +1,28 @@
+name: Suporte / Support
+description: Relate um problema ou dúvida sobre o jogo. / Report a game issue or question.
+title: "[Support] "
+body:
+  - type: markdown
+    attributes:
+      value: "Requests are public. Do not include personal information, passwords or save files. Solicitações são públicas; não inclua dados pessoais, senhas ou seu progresso."
+  - type: input
+    id: version
+    attributes:
+      label: Versão do jogo / Game version
+      placeholder: "1.0 (9)"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Aparelho e iOS / Device and iOS
+      placeholder: "iPhone 17, iOS 26.5"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema ou dúvida / Issue or question
+      description: Explique o que aconteceu e como repetir. / Explain what happened and how to reproduce it.
+    validations:
+      required: true
